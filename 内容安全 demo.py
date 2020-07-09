@@ -11,8 +11,16 @@ from aliyunsdkimageaudit.request.v20191230.ScanImageRequest import ScanImageRequ
 #############################################################
 # 请输入阿里云accessKeyId & accessSecret
 
-accessKeyId='accessKeyId'
-accessSecret='accessSecret'
+accessKeyId = 'accessKeyId'
+accessSecret = 'accessSecret'
+
+if accessKeyId == accessKeyId or accessSecret == accessSecret:
+    print('请输入AccessKeyId')
+    accessKeyId = input("")
+
+    print('请输入AccessSecret')
+    accessSecret = input("")
+
 
 #############################################################
 
@@ -46,7 +54,7 @@ try:
     # print("\n"+strReponse)
 
 except:
-    strReponse="请输入正确的链接"
+    strReponse = "请输入正确的链接"
     print("\n"+strReponse)
 
 
@@ -56,8 +64,8 @@ except:
 S1 = 0
 S2 = 0
 
-R1=0
-R2=0
+R1 = 0
+R2 = 0
 
 #############################################################
 # 函数查找切片位置
